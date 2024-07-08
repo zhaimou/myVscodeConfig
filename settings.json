@@ -1,0 +1,207 @@
+{ 
+   "explorer.confirmDragAndDrop": false,
+  "cssrem.rootFontSize": 37.5,
+  "px2vw.width": 375,
+  "workbench.startupEditor": "none",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 1,
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  // "vim.leap": true,
+  "vim.leader": "<Space>",
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    },
+    {
+      "before": ["a", "i"],
+      "after": ["a", "I"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    },
+
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    },
+    {
+      "before": ["a", "i"],
+      "after": ["a", "I"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Leader>", "f", "d"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      // 基于2个字符的全局跳转 基于 easymotion
+      "before": ["s"],
+      "after": ["<leader>", "<leader>", "2", "s"]
+    },
+    {
+      // 向右侧跳转 利用的 easymotion
+      "before": ["<Leader>", "l"],
+      "after": ["<leader>", "<leader>", "l"]
+    },
+    {
+      // 向左侧跳转 利用的 easymotion
+      "before": ["<Leader>", "h"],
+      "after": ["<leader>", "<leader>", "h"]
+    },
+    {
+      // 选中一个对象/数组
+      "before": ["<leader>", "s"],
+      "after": ["V", "$", "%"]
+    },
+    {
+      // 基于行的向下跳转 利用的 easymotion
+      "before": ["<Leader>", "j"],
+      "after": ["<leader>", "<leader>", "j"]
+    },
+    {
+      // 基于行的向上跳转 利用的 easymotion
+      "before": ["<Leader>", "k"],
+      "after": ["<leader>", "<leader>", "k"]
+    },
+    {
+      "before": ["<Leader>", "r", "n"],
+      "after": ["editor.action.rename"]
+    },
+    
+    {
+      "before": ["<Leader>", "["],
+      "commands": [
+        {
+          "command": "editor.fold"
+        },
+        {
+          "command": "vim.remap",
+          "args": {
+            "after": ["$", "%"]
+          }
+        }
+      ]
+    },
+    // {
+    //   "before": ["f"],
+    //   "after": ["s"]
+    // },
+    // {
+    //   "before": ["F"],
+    //   "after": ["S"]
+    // },
+    // {
+    // "before": ["s"],
+    // "after": ["c", "l"]
+    // },
+    {
+      "before": ["S"],
+      "after": ["^", "C"]
+    },
+    {
+      "before": ["<Leader>", "n", "d"],
+      "commands": ["explorer.newFolder"]
+    },
+
+    {
+      "before": ["<Leader>", "n", "f"],
+      "commands": ["explorer.newFile"]
+    },
+    {
+      "before": ["<Leader>", "f", "f"],
+      "commands": ["hocusPocus.createFunction"]
+    },
+    {
+      "before": ["<Leader>", "v", "v"],
+      "commands": ["hocusPocus.createVariable"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    // {
+    //   "before": ["f"],
+    //   "after": ["s"]
+    // }
+   {
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Leader>", "g", "g"],
+      "commands": ["workbench.view.scm"]
+    }
+  ],
+  //   "editor.formatOnSave": true,
+  "editor.foldingStrategy": "indentation",
+  "terminal.integrated.macOptionIsMeta": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "vim.foldfix": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+//   "eslint.autoFixOnSave": true,
+  "terminal.integrated.env.osx": {},
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "vim.flash.enable": true,
+  "editor.detectIndentation": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "explicit"
+  },
+"Codegeex.Privacy": false,
+"Codegeex.EnableExtension": false
+    // "jest.autoEnable": false
+}

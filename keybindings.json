@@ -1,0 +1,106 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "shift+left",
+    "command": "vim.remap",
+    "when": "vim.mode == 'Normal' ",
+    "args": {
+      "after": ["<c-w>", "h"]
+    }
+  },
+  {
+    "key": "shift+right",
+    "command": "vim.remap",
+    "when": "vim.mode == 'Normal' ",
+    "args": {
+      "after": ["<c-w>", "l"]
+    }
+  },
+  {
+    "key": "shift+up",
+    "command": "vim.remap",
+    "when": "vim.mode == 'Normal' ",
+    "args": {
+      "after": ["<c-w>", "k"]
+    }
+  },
+  {
+    "key": "shift+down",
+    "command": "vim.remap",
+    "when": "vim.mode == 'Normal' ",
+    "args": {
+      "after": ["<c-w>", "j"]
+    }
+  },
+  {
+    "key": "ctrl+;",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.focusFirstEditorGroup"
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+a",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "shift+alt+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "shift+alt+q",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "cmd+c",
+    "command": "execCopy",
+    "when":"inputFocus",
+  },
+  {
+    "key": "cmd+i",
+    "command": "-codegeex.expandInlineChat",
+    "when": "codegeex.enableComment"
+  },
+  {
+    "key": "alt+cmd+g",
+    "command": "codegeex.chat.focus"
+  },
+  {
+    "key": "ctrl+cmd+i",
+    "command": "-codegeex.chat.focus"
+},
+{
+    "key": "alt+c",
+    "command": "copyFilePath",
+    "when": "editorFocus"
+},
+{
+    "key": "cmd+k alt+cmd+c",
+    "command": "-copyFilePath",
+    "when": "editorFocus"
+}
+]
