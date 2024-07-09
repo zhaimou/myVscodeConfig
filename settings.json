@@ -1,5 +1,6 @@
-{ 
-   "explorer.confirmDragAndDrop": false,
+{
+  "update.mode":"none",
+  "explorer.confirmDragAndDrop": false,
   "cssrem.rootFontSize": 37.5,
   "px2vw.width": 375,
   "workbench.startupEditor": "none",
